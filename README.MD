@@ -1,3 +1,3 @@
 # My First GitHub Project
 
-this is my first github project
+this is the voting app project using Docker and Kubernetes Deployment and Services
