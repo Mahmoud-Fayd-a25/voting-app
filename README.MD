@@ -2,7 +2,7 @@
 
 this is the voting app project using Docker and Kubernetes Deployment and Services running across multiple Docker containers.
 
-## Getting started
+## Description 
 
 This containerized web app, orchestrated by Docker, Compose, Swarm, and Kubernetes, invites users to cast votes for dogs or cats on one page. The application dynamically visualizes real-time voting results on another page, ensuring an engaging and scalable experience. With Docker Swarm and Kubernetes, it achieves high availability and can seamlessly scale based on demand. The deployment is flexible, adapting to local environments with Docker Compose and scaling to enterprise levels with Kubernetes. Overall, it offers a versatile, interactive, and containerized solution for dynamic user engagement.
 
