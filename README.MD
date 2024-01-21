@@ -26,6 +26,12 @@ kubectl create -f app\redis-deploy.yaml
 kubectl create -f app\redis-service.yaml
 ```
 
+or
+
+```shell
+kubectl create -f app\.
+```
+
 The `vote` app will be running at [http://localhost:30004](http://localhost:30004), and the `results` will be at [http://localhost:30005](http://localhost:30005).
 
 Or use the following commands to get the URL for `vote` and `results` Web pages
