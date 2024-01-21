@@ -28,7 +28,7 @@ kubectl create -f app\redis-service.yaml
 
 The `vote` app will be running at [http://localhost:30004](http://localhost:30004), and the `results` will be at [http://localhost:30005](http://localhost:30005).
 
-or use the following commands to get the URL for `vote` and `results` Web pages
+Or use the following commands to get the URL for `vote` and `results` Web pages
 
 The `vote` web app is then available on port 30004 on each host of the cluster, the `result` web app is available on port 30005.
 
@@ -37,19 +37,20 @@ minikube service voting-service --url
 minikube service result-service --url
 ```
 
-to retrieve information about deployments (deploy), pods (pod), and services (svc) within the Kubernetes cluster.
+To retrieve information about deployments (deploy), pods (pod), and services (svc) within the Kubernetes cluster.
 
 ```shell
 kubectl get deploy,pod,svc
 ```
 
-to scale the number of replicas for a deployment in a Kubernetes cluster to 3 for example.
+Eash Deployment has 1 pod only.
+To scale the number of replicas for a deployment in a Kubernetes cluster to 3 for example.
 
 ```shell
 kubectl scale deploy result-app-deploy --replicas=3
 ```
 
-to retrieve information specifically about the deployment named "result-app-deploy" that you gust scaled within the Kubernetes cluster.
+To retrieve information specifically about the deployment named "result-app-deploy" that you gust scaled within the Kubernetes cluster.
 
 ```shell
 kubectl get deploy result-app-deploy
