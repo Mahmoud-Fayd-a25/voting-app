@@ -49,7 +49,7 @@ There are two ways to SSH into the nodes:
 
 ### 1. SSH using Vagrant
 
-  From the directory you ran the `vagrant up` command, run `vagrant ssh <vm>` for example `vagrant ssh master-1`.
+  From the directory you ran the `vagrant up` command, run `vagrant ssh <vm>` for example `vagrant ssh kubemaster`.
 
   This is the easiest way as it requires no configuration.
 
