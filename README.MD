@@ -2,7 +2,7 @@
 
 this is the voting app project using Docker and Kubernetes Deployment and Services running across multiple Docker containers.
 
-## Description 
+## Description
 
 This containerized web app, orchestrated by Docker, Compose, Swarm, and Kubernetes, invites users to cast votes for dogs or cats on one page. The application dynamically visualizes real-time voting results on another page, ensuring an engaging and scalable experience. With Docker Swarm and Kubernetes, it achieves high availability and can seamlessly scale based on demand. The deployment is flexible, adapting to local environments with Docker Compose and scaling to enterprise levels with Kubernetes. Overall, it offers a versatile, interactive, and containerized solution for dynamic user engagement.
 
@@ -15,15 +15,15 @@ The folder voting-app contains the YAML specifications of the Voting App's servi
 Run the following command to create the deployments and services. Note it will create these resources in your current namespace (`default` if you haven't changed it.)
 
 ```shell
-kubectl create -f voting-app-deploy.yaml
-kubectl create -f voting-app-service.yaml
-kubectl create -f result-app-deploy.yaml
-kubectl create -f result-app-service.yaml
-kubectl create -f worker-app-deploy.yaml
-kubectl create -f postgres-deploy.yaml
-kubectl create -f postgres-service.yaml
-kubectl create -f redis-deploy.yaml
-kubectl create -f redis-service.yaml
+kubectl create -f app\voting-app-deploy.yaml
+kubectl create -f app\voting-app-service.yaml
+kubectl create -f app\result-app-deploy.yaml
+kubectl create -f app\result-app-service.yaml
+kubectl create -f app\worker-app-deploy.yaml
+kubectl create -f app\postgres-deploy.yaml
+kubectl create -f app\postgres-service.yaml
+kubectl create -f app\redis-deploy.yaml
+kubectl create -f app\redis-service.yaml
 ```
 
 The `vote` app will be running at [http://localhost:30004](http://localhost:30004), and the `results` will be at [http://localhost:30005](http://localhost:30005).
