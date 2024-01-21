@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -19,7 +20,8 @@ spec:
         app: demo-voting-app
     spec:
       containers:
-        - name: voting-app
-          image: kodekloud/examplevotingapp_vote:v1
-          ports:
-            - containerPort: 80
+      - name: voting-app
+        image: kodekloud/examplevotingapp_vote:v1
+        ports:
+        - containerPort: 80
+
